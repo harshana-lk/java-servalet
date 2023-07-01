@@ -8,8 +8,38 @@
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>Customer</servlet-name>
+        <url-pattern>/customer</url-pattern>
+    </servlet-mapping>
+
+
     <servlet>
         <servlet-name>TestTask</servlet-name>
         <servlet-class>me.harshu.javaservalet.TestTask</servlet-class>
+<!--        <load-on-startup>2</load-on-startup>-->
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>TestName</param-value>
+        </init-param>
+        <init-param>
+            <param-name>city</param-name>
+            <param-value>TestAddress</param-value>
+        </init-param>
     </servlet>
+
+    <servlet>
+        <servlet-name>Customer</servlet-name>
+        <servlet-class>me.harshu.javaservalet.Customer</servlet-class>
+<!--        <load-on-startup>3</load-on-startup>-->
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Harshana</param-value>
+        </init-param>
+        <init-param>
+            <param-name>city</param-name>
+            <param-value>Badulla</param-value>
+        </init-param>
+    </servlet>
+
 </web-app>
